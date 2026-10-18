@@ -1,0 +1,247 @@
+🚗 1. KONSEP SISTEM PARKIR DIGITAL
+
+Sistem ini adalah aplikasi berbasis web yang digunakan untuk:
+
+Mencatat kendaraan masuk & keluar
+Mengelola data kendaraan
+Monitoring kondisi parkir secara real-time
+
+👉 Sistem menggantikan metode manual (catat buku) → jadi otomatis & cepat
+
+🔐 2. SISTEM LOGIN (MULTI ROLE)
+📌 Fungsi:
+
+Membatasi akses sesuai peran
+
+👥 Role & Hak Akses:
+👨‍💼 Admin
+Kelola user
+Kelola kendaraan
+Lihat statistik & laporan
+👮 Petugas
+Scan kendaraan masuk/keluar
+Monitoring parkiran
+Tambah member (user)
+👤 User
+Melihat kendaraan sendiri
+Melihat QR Code
+Melihat riwayat parkir
+▶️ Cara Penggunaan:
+Buka halaman login
+Masukkan username & password
+Klik Login
+Sistem otomatis masuk ke dashboard sesuai role
+🌐 3. HOMEPAGE
+📌 Fungsi:
+Halaman awal sebelum login
+Menampilkan informasi sistem
+▶️ Cara Penggunaan:
+User buka web → langsung melihat info sistem
+Klik tombol Login untuk masuk
+🚗 4. MANAJEMEN KENDARAAN
+📌 Fungsi:
+
+Mengelola data kendaraan yang terdaftar
+
+📋 Data yang disimpan:
+Nama pemilik
+Plat nomor
+Jenis kendaraan
+QR Code
+▶️ Cara Penggunaan (Admin/Petugas):
+Masuk ke menu Kendaraan
+Pilih user
+Input plat nomor
+Pilih jenis kendaraan
+Klik Tambah
+
+👉 Sistem otomatis:
+
+Menyimpan data
+Membuat QR Code unik
+📸 5. QR CODE SYSTEM
+📌 Fungsi:
+
+Sebagai identitas kendaraan
+
+⚙️ Cara kerja:
+Setiap kendaraan punya QR unik
+QR digunakan saat scan masuk/keluar
+▶️ Cara Penggunaan:
+User buka dashboard
+Lihat kartu parkir
+Tunjukkan QR ke petugas saat masuk/keluar
+🚪 6. TRANSAKSI PARKIR
+📌 Fungsi:
+
+Mencatat kendaraan masuk & keluar
+
+⚙️ Cara kerja sistem:
+Scan pertama → MASUK
+Scan kedua → KELUAR
+
+👉 Sistem otomatis tanpa tombol tambahan
+
+▶️ Cara Penggunaan (Petugas):
+Buka menu scan
+Scan QR kendaraan
+Sistem langsung:
+Simpan waktu masuk ATAU keluar
+Data masuk ke database
+📊 7. DASHBOARD PETUGAS
+📌 Fitur:
+Total kendaraan masuk
+Sisa slot parkir
+Status parkir (penuh/tersedia)
+▶️ Cara Penggunaan:
+Petugas cukup melihat dashboard
+Sistem otomatis menampilkan kondisi parkir
+🚗 8. MONITOR KENDARAAN DI PARKIRAN
+📌 Fungsi:
+
+Menampilkan kendaraan yang masih berada di parkiran
+
+📋 Informasi:
+Plat nomor
+Nama pemilik
+Waktu masuk
+Durasi parkir
+▶️ Cara Penggunaan:
+Masuk menu Parkiran
+Lihat daftar kendaraan aktif
+🔍 Fitur tambahan:
+🔍 Search
+Ketik plat → langsung muncul
+⏱️ Durasi Live
+Waktu parkir dihitung otomatis
+🔊 Alarm
+Jika > 8 jam → bunyi peringatan
+📊 9. STATISTIK PARKIR
+📌 Fungsi:
+
+Menampilkan grafik penggunaan parkir
+
+📈 Data:
+Pagi
+Siang
+Sore
+Motor vs Mobil
+▶️ Cara Penggunaan:
+Buka dashboard
+Lihat grafik otomatis
+📋 10. LOG AKTIVITAS
+📌 Fungsi:
+
+Menyimpan riwayat parkir
+
+📋 Data:
+Plat
+Waktu masuk
+Waktu keluar
+▶️ Cara Penggunaan:
+Buka menu riwayat
+Lihat data kendaraan
+👤 11. DASHBOARD USER
+📌 Fungsi:
+
+Memberikan informasi ke user
+
+📋 Fitur:
+Status parkir
+Jumlah kendaraan
+QR Code
+Riwayat parkir
+▶️ Cara Penggunaan:
+Login sebagai user
+Lihat dashboard
+Gunakan QR saat parkir
+💳 12. KARTU PARKIR DIGITAL
+📌 Fungsi:
+
+Identitas kendaraan dalam bentuk digital
+
+📋 Isi:
+Plat nomor
+Jenis kendaraan
+QR Code
+▶️ Cara Penggunaan:
+Buka dashboard user
+Tampilkan QR
+Scan saat masuk/keluar
+🔔 13. NOTIFIKASI
+📌 Fungsi:
+
+Memberi peringatan
+
+📋 Jenis:
+Parkir penuh → merah
+Kendaraan lama → alarm
+▶️ Cara Penggunaan:
+Sistem otomatis memberi alert
+Petugas tinggal respon
+🔄 14. REALTIME SYSTEM
+📌 Fungsi:
+
+Menampilkan data secara langsung
+
+▶️ Cara Penggunaan:
+Tidak perlu refresh
+Data update otomatis
+🔍 15. SEARCH & FILTER
+📌 Fungsi:
+
+Mempermudah pencarian data
+
+▶️ Cara Penggunaan:
+Ketik plat atau pilih user
+Data langsung difilter
+📥 16. DOWNLOAD QR
+📌 Fungsi:
+
+Menyimpan QR Code
+
+▶️ Cara Penggunaan:
+Klik tombol Download
+QR tersimpan di perangkat
+🚪 17. LOGOUT
+📌 Fungsi:
+
+Keluar dari sistem
+
+▶️ Cara Penggunaan:
+Klik tombol logout
+Sistem kembali ke login
+💣 ALUR PENGGUNAAN SISTEM (END-TO-END)
+🎬 SCENARIO NYATA:
+1. Admin
+Login
+Tambah user & kendaraan
+2. User
+Login
+Lihat QR kendaraan
+3. Saat Masuk Parkir
+User tunjukkan QR
+Petugas scan
+👉 Status = MASUK
+4. Saat Keluar
+Scan lagi
+👉 Status = KELUAR
+5. Monitoring
+Petugas lihat dashboard
+Cek kendaraan aktif
+🔥 KELEBIHAN SISTEM
+
+✔ Cepat (scan QR)
+✔ Akurat
+✔ Real-time
+✔ Mudah digunakan
+✔ Bisa dikembangkan
+
+🚀 PENUTUP (BUAT PRESENTASI)
+
+Sistem ini:
+
+Mengubah parkir manual → digital
+Mengurangi kesalahan manusia
+Mempercepat proses masuk & keluar
+Memberikan kontrol penuh ke petugas
